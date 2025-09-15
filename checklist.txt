@@ -9,7 +9,7 @@ ENVIRONMENT SETUP CHECKLIST
 □ Virtual Environment Active
   - Virtual environment created
   - Virtual environment activated
-  - Command: which python (should show venv path)
+  - Command: .\.venv\Scripts\Activate.ps1
   - Prompt should show (venv_name) or similar indicator
 
 □ Django Version
@@ -34,7 +34,6 @@ ENVIRONMENT SETUP CHECKLIST
 
 VERIFICATION COMMANDS:
 - python --version
-- pip list | grep Django
-- python manage.py runserver (Ctrl+C to stop)
+- python -m django --version
 - git status
 - git remote -v
