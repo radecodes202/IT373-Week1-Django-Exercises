@@ -1,0 +1,40 @@
+ENVIRONMENT SETUP CHECKLIST
+=============================
+
+□ Python Version
+  - Python 3.8+ installed and accessible
+  - Command: python --version or python3 --version
+  - Expected output: Python 3.x.x
+
+□ Virtual Environment Active
+  - Virtual environment created
+  - Virtual environment activated
+  - Command: which python (should show venv path)
+  - Prompt should show (venv_name) or similar indicator
+
+□ Django Version
+  - Django installed in virtual environment
+  - Command: python -m django --version
+  - Expected output: Django version number (e.g., 4.2.x, 5.0.x)
+  - Requirements.txt updated with Django version
+
+□ Django runserver Working
+  - Django project created successfully
+  - Development server starts without errors
+  - Command: python manage.py runserver
+  - Server accessible at http://127.0.0.1:8000/
+  - No migration warnings (initial migrations run)
+
+□ Git Remote Set
+  - Git repository initialized
+  - Remote repository configured
+  - Command: git remote -v (should show origin URL)
+  - Initial commit made
+  - .gitignore file configured for Django project
+
+VERIFICATION COMMANDS:
+- python --version
+- pip list | grep Django
+- python manage.py runserver (Ctrl+C to stop)
+- git status
+- git remote -v
