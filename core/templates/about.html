@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}About - My Django Site{% endblock %}
+
+{% block header %}About Me{% endblock %}
+
+{% block content %}
+<h2>About Me</h2>
+
+<div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #dee2e6;">
+    <h3>Student Information</h3>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Student ID:</strong> {{ student_id }}</p>
+</div>
+
+<div style="margin-top: 30px;">
+    <h3>About This Project</h3>
+    <p>This Django application demonstrates template inheritance and basic web development concepts. The site uses a base template that provides consistent styling and navigation across all pages.</p>
+    
+    <h4>Technical Details:</h4>
+    <ul>
+        <li>Built with Django framework</li>
+        <li>Uses template inheritance for consistent design</li>
+        <li>Responsive CSS styling</li>
+        <li>Clean URL routing</li>
+    </ul>
+</div>
+
+<!-- <div style="background-color: #d4edda; padding: 15px; border-radius: 8px; margin-top: 20px; border: 1px solid #c3e6cb;">
+    <h4>Template Inheritance</h4>
+    <p>This page extends the base.html template, inheriting the navigation, header, footer, and overall styling while providing unique content in the content block.</p>
+</div> -->
+
+<p style="margin-top: 30px;">
+    <a href="/" style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px;">
+        ← Back to Home
+    </a>
+</p>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - My Django Site{% endblock %}
+
+{% block header %}Welcome to My Django Site{% endblock %}
+
+{% block content %}
+<h2>Welcome!</h2>
+<p>This is the home page of my Django application. This site demonstrates template inheritance and basic Django functionality.</p>
+
+<div style="background-color: #e8f4fd; padding: 20px; border-radius: 8px; margin: 20px 0;">
+    <h3>Features:</h3>
+    <ul>
+        <li>Template inheritance using Django's template system</li>
+        <li>Clean, responsive design</li>
+        <li>Navigation between pages</li>
+        <li>Base template with consistent styling</li>
+    </ul>
+</div>
+
+<p>Navigate to the <a href="/about/" style="color: #007bff; text-decoration: none;">About page</a> to learn more about me!</p>
+
+{% endblock %}
